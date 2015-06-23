@@ -1,0 +1,8 @@
+---
+applications:
+- name: barcode-scanner-poc
+  memory: 1024M
+  instances: 1
+  host: barcode-scanner-poc
+  path: target/barcode-scanner-poc-1.0-SNAPSHOT.jar
+

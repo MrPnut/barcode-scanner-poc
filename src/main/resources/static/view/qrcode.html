@@ -1,0 +1,101 @@
+<div class="content-container">
+    <h1>QR Code</h1>
+    <p class="lead">Create, view, and scan QR codes</p>
+    <tabset>
+        <tab heading="Create">
+            <form role="form">
+                <div class="form-group">
+                    <label for="item1Input">Item 1</label>
+                    <input type="text" class="form-control" id="item1Input" ng-model="imageForm.item1">
+                </div>
+                <div class="form-group">
+                    <label for="item2Input">Item 2</label>
+                    <input type="text" class="form-control" id="item2Input" ng-model="imageForm.item2">
+                </div>
+                <div class="form-group">
+                    <label for="item3Input">Item 3</label>
+                    <input type="text" class="form-control" id="item3Input" ng-model="imageForm.item3">
+                </div>
+                <div class="form-group">
+                    <label for="item4Input">Item 4</label>
+                    <input type="text" class="form-control" id="item4Input" ng-model="imageForm.item4">
+                </div>
+                <div class="form-group">
+                    <label for="item5Input">Item 5</label>
+                    <input type="text" class="form-control" id="item5Input" ng-model="imageForm.item5">
+                </div>
+                <div class="form-group">
+                    <label for="item6Input">Item 6</label>
+                    <input type="text" class="form-control" id="item6Input" ng-model="imageForm.item6">
+                </div>
+                <div class="form-group">
+                    <label for="item7Input">Item 7</label>
+                    <input type="text" class="form-control" id="item7Input" ng-model="imageForm.item7">
+                </div>
+                <div class="form-group">
+                    <label for="item8Input">Item 8</label>
+                    <input type="text" class="form-control" id="item8Input" ng-model="imageForm.item8">
+                </div>
+                <div class="form-group">
+                    <label for="item9Input">Item 9</label>
+                    <input type="text" class="form-control" id="item9Input" ng-model="imageForm.item9">
+                </div>
+                <div class="form-group">
+                    <label for="item10Input">Item 10</label>
+                    <input type="text" class="form-control" id="item10Input" ng-model="imageForm.item10">
+                </div>
+            </form>
+        </tab>
+        <tab heading="View" select="updateImage()">
+            <img ng-src="{{imageSrc}}">
+        </tab>
+        <tab heading="Scan">
+            <form role="form">
+                <div class="form-group">
+                    <label for="qrFile">QR Code</label>
+                    <input type="file" class="form-control" id="qrFile" onchange="angular.element(this).scope().decode(this)">
+                </div>
+                <div class="form-group">
+                    <label for="item1ScanInput">Item 1</label>
+                    <input type="text" class="form-control" id="item1ScanInput" ng-model="imageFormScan.item1">
+                </div>
+                <div class="form-group">
+                    <label for="item2ScanInput">Item 2</label>
+                    <input type="text" class="form-control" id="item2ScanInput" ng-model="imageFormScan.item2">
+                </div>
+                <div class="form-group">
+                    <label for="item3ScanInput">Item 3</label>
+                    <input type="text" class="form-control" id="item3ScanInput" ng-model="imageFormScan.item3">
+                </div>
+                <div class="form-group">
+                    <label for="item4ScanInput">Item 4</label>
+                    <input type="text" class="form-control" id="item4ScanInput" ng-model="imageFormScan.item4">
+                </div>
+                <div class="form-group">
+                    <label for="item5ScanInput">Item 5</label>
+                    <input type="text" class="form-control" id="item5ScanInput" ng-model="imageFormScan.item5">
+                </div>
+                <div class="form-group">
+                    <label for="item6ScanInput">Item 6</label>
+                    <input type="text" class="form-control" id="item6ScanInput" ng-model="imageFormScan.item6">
+                </div>
+                <div class="form-group">
+                    <label for="item7ScanInput">Item 7</label>
+                    <input type="text" class="form-control" id="item7ScanInput" ng-model="imageFormScan.item7">
+                </div>
+                <div class="form-group">
+                    <label for="item8ScanInput">Item 8</label>
+                    <input type="text" class="form-control" id="item8ScanInput" ng-model="imageFormScan.item8">
+                </div>
+                <div class="form-group">
+                    <label for="item9ScanInput">Item 9</label>
+                    <input type="text" class="form-control" id="item9ScanInput" ng-model="imageFormScan.item9">
+                </div>
+                <div class="form-group">
+                    <label for="item10ScanInput">Item 10</label>
+                    <input type="text" class="form-control" id="item10ScanInput" ng-model="imageFormScan.item10">
+                </div>
+            </form>
+        </tab>
+    </tabset>
+</div>

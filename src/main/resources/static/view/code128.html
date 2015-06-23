@@ -1,0 +1,19 @@
+<div class="content-container">
+    <h1>Code 128</h1>
+    <p class="lead">Use the form to scan a code128 barcode picture.</p>
+    <form id="scanForm">
+        <div class="form-group">
+            <label for="image">Image</label>
+            <input type="file" class="form-control" name="image" id="image" aria-label="Image"
+                   onchange="angular.element(this).scope().decode(this)">
+        </div>
+    </form>
+</div>
+<div class="content-container">
+    <form>
+        <div class="form-group">
+            <label for="barcodeText">Barcode Text</label>
+            <input type="text" class="form-control" id="barcodeText" aria-label="Barcode Text" ng-model="code">
+        </div>
+    </form>
+</div>
